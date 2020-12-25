@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBook.Domain.Contracts"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBook.Serices.AppService", "PhoneBook.Serices.AppService\PhoneBook.Serices.AppService.csproj", "{FCF79A5E-AB80-4B40-BFA2-326A4D159833}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBook.Infarstructure.DAL", "PhoneBook.Infarstructure.DAL\PhoneBook.Infarstructure.DAL.csproj", "{C04624DB-3147-49C7-B55B-C1BFB384E17D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{FCF79A5E-AB80-4B40-BFA2-326A4D159833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCF79A5E-AB80-4B40-BFA2-326A4D159833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCF79A5E-AB80-4B40-BFA2-326A4D159833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04624DB-3147-49C7-B55B-C1BFB384E17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04624DB-3147-49C7-B55B-C1BFB384E17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04624DB-3147-49C7-B55B-C1BFB384E17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04624DB-3147-49C7-B55B-C1BFB384E17D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{87BEF7A9-296F-453C-B779-084891F5BC48} = {DC850A37-EF61-4F15-A781-31818CB5A07D}
 		{D498F9AA-F0B3-4BF7-88E0-242FEFDE2F28} = {DC850A37-EF61-4F15-A781-31818CB5A07D}
 		{FCF79A5E-AB80-4B40-BFA2-326A4D159833} = {79189023-E05A-4564-A7AA-276CC7F06DE3}
+		{C04624DB-3147-49C7-B55B-C1BFB384E17D} = {03505EED-63DE-4280-A9BF-618E153BF0DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EDD3739-967F-4DD8-9F1C-EC8EAD5D7E1A}
