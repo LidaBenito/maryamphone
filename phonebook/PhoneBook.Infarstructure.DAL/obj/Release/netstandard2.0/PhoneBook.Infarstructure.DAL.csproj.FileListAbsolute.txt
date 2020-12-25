@@ -1,0 +1,14 @@
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\bin\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.deps.json
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\bin\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.dll
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\bin\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.pdb
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\bin\Release\netstandard2.0\PhoneBook.Domain.Contracts.dll
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\bin\Release\netstandard2.0\PhoneBook.Domain.Core.dll
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\bin\Release\netstandard2.0\PhoneBook.Domain.Contracts.pdb
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\bin\Release\netstandard2.0\PhoneBook.Domain.Core.pdb
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\obj\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.csprojAssemblyReference.cache
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\obj\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.AssemblyInfoInputs.cache
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\obj\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.AssemblyInfo.cs
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\obj\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.csproj.CoreCompileInputs.cache
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\obj\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.csproj.CopyComplete
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\obj\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.dll
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Infarstructure.DAL\obj\Release\netstandard2.0\PhoneBook.Infarstructure.DAL.pdb

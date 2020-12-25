@@ -1,0 +1,12 @@
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\bin\Release\netstandard2.0\PhoneBook.Domain.Contracts.deps.json
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\bin\Release\netstandard2.0\PhoneBook.Domain.Contracts.dll
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\bin\Release\netstandard2.0\PhoneBook.Domain.Contracts.pdb
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\bin\Release\netstandard2.0\PhoneBook.Domain.Core.dll
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\bin\Release\netstandard2.0\PhoneBook.Domain.Core.pdb
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\obj\Release\netstandard2.0\PhoneBook.Domain.Contracts.csprojAssemblyReference.cache
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\obj\Release\netstandard2.0\PhoneBook.Domain.Contracts.AssemblyInfoInputs.cache
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\obj\Release\netstandard2.0\PhoneBook.Domain.Contracts.AssemblyInfo.cs
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\obj\Release\netstandard2.0\PhoneBook.Domain.Contracts.csproj.CoreCompileInputs.cache
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\obj\Release\netstandard2.0\PhoneBook.Domain.Contracts.csproj.CopyComplete
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\obj\Release\netstandard2.0\PhoneBook.Domain.Contracts.dll
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Contracts\obj\Release\netstandard2.0\PhoneBook.Domain.Contracts.pdb
