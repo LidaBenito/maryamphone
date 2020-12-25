@@ -1,0 +1,9 @@
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Core\bin\Release\netstandard2.0\PhoneBook.Domain.Core.deps.json
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Core\bin\Release\netstandard2.0\PhoneBook.Domain.Core.dll
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Core\bin\Release\netstandard2.0\PhoneBook.Domain.Core.pdb
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Core\obj\Release\netstandard2.0\PhoneBook.Domain.Core.csprojAssemblyReference.cache
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Core\obj\Release\netstandard2.0\PhoneBook.Domain.Core.AssemblyInfoInputs.cache
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Core\obj\Release\netstandard2.0\PhoneBook.Domain.Core.AssemblyInfo.cs
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Core\obj\Release\netstandard2.0\PhoneBook.Domain.Core.csproj.CoreCompileInputs.cache
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Core\obj\Release\netstandard2.0\PhoneBook.Domain.Core.dll
+M:\phonebook\PhoneBookMarya\PhoneBookMarya\PhoneBook.Domain.Core\obj\Release\netstandard2.0\PhoneBook.Domain.Core.pdb
