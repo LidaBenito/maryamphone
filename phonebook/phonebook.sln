@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Endpoints", "04.Endpoint
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBook.Domain.Core", "PhoneBook.Domain.Core\PhoneBook.Domain.Core.csproj", "{87BEF7A9-296F-453C-B779-084891F5BC48}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBook.Domain.Contracts", "PhoneBook.Domain.Contracts\PhoneBook.Domain.Contracts.csproj", "{D498F9AA-F0B3-4BF7-88E0-242FEFDE2F28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{87BEF7A9-296F-453C-B779-084891F5BC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87BEF7A9-296F-453C-B779-084891F5BC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87BEF7A9-296F-453C-B779-084891F5BC48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D498F9AA-F0B3-4BF7-88E0-242FEFDE2F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D498F9AA-F0B3-4BF7-88E0-242FEFDE2F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D498F9AA-F0B3-4BF7-88E0-242FEFDE2F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D498F9AA-F0B3-4BF7-88E0-242FEFDE2F28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{87BEF7A9-296F-453C-B779-084891F5BC48} = {DC850A37-EF61-4F15-A781-31818CB5A07D}
+		{D498F9AA-F0B3-4BF7-88E0-242FEFDE2F28} = {DC850A37-EF61-4F15-A781-31818CB5A07D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EDD3739-967F-4DD8-9F1C-EC8EAD5D7E1A}
