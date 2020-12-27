@@ -17,4 +17,8 @@
     <ProjectReference Include="..\PhoneBook.Serices.AppService\PhoneBook.Serices.AppService.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
