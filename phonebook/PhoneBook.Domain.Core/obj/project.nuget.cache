@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lAZSoyeck1ewGJM6TbhKevx3z21b5lAVCjjTOfxakNHYC7H85E2y1++84kPlcXr92+XS05MYWayR914/qvNESA==",
+  "dgSpecHash": "6Q8c56jkX3GfNJ1GqyMzg32Irbc8qJ1/8lsbfiThJVr40lf9Q+AQISaKNiO/hkzUBe11zbUQ/QBr8vYI36obeQ==",
   "success": true,
-  "projectFilePath": "M:\\phonebook\\maryamphone\\phonebook\\PhoneBook.Domain.Core\\PhoneBook.Domain.Core.csproj",
+  "projectFilePath": "M:\\phonebook\\PhoneBook2021\\maryamphone\\phonebook\\PhoneBook.Domain.Core\\PhoneBook.Domain.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

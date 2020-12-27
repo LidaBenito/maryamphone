@@ -26,3 +26,17 @@ M:\phonebook\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netsta
 M:\phonebook\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.csproj.CopyComplete
 M:\phonebook\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.dll
 M:\phonebook\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\bin\Debug\netstandard2.0\PhoneBook.Serices.AppService.deps.json
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\bin\Debug\netstandard2.0\PhoneBook.Serices.AppService.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\bin\Debug\netstandard2.0\PhoneBook.Serices.AppService.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\bin\Debug\netstandard2.0\PhoneBook.Domain.Contracts.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\bin\Debug\netstandard2.0\PhoneBook.Domain.Core.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\bin\Debug\netstandard2.0\PhoneBook.Domain.Contracts.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\bin\Debug\netstandard2.0\PhoneBook.Domain.Core.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.csprojAssemblyReference.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.AssemblyInfoInputs.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.AssemblyInfo.cs
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.csproj.CoreCompileInputs.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.csproj.CopyComplete
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Serices.AppService\obj\Debug\netstandard2.0\PhoneBook.Serices.AppService.pdb

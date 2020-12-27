@@ -26,3 +26,17 @@ M:\phonebook\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netsta
 M:\phonebook\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.csproj.CopyComplete
 M:\phonebook\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.dll
 M:\phonebook\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\bin\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.deps.json
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\bin\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\bin\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\bin\Debug\netstandard2.0\PhoneBook.Domain.Contracts.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\bin\Debug\netstandard2.0\PhoneBook.Domain.Core.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\bin\Debug\netstandard2.0\PhoneBook.Domain.Contracts.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\bin\Debug\netstandard2.0\PhoneBook.Domain.Core.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.csprojAssemblyReference.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.AssemblyInfoInputs.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.AssemblyInfo.cs
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.csproj.CoreCompileInputs.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.csproj.CopyComplete
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Infarstructure.DAL\obj\Debug\netstandard2.0\PhoneBook.Infarstructure.DAL.pdb

@@ -22,3 +22,15 @@ M:\phonebook\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstand
 M:\phonebook\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.csproj.CopyComplete
 M:\phonebook\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.dll
 M:\phonebook\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\bin\Debug\netstandard2.0\PhoneBook.Domain.Contracts.deps.json
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\bin\Debug\netstandard2.0\PhoneBook.Domain.Contracts.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\bin\Debug\netstandard2.0\PhoneBook.Domain.Contracts.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\bin\Debug\netstandard2.0\PhoneBook.Domain.Core.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\bin\Debug\netstandard2.0\PhoneBook.Domain.Core.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.csprojAssemblyReference.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.AssemblyInfoInputs.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.AssemblyInfo.cs
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.csproj.CoreCompileInputs.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.csproj.CopyComplete
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Contracts\obj\Debug\netstandard2.0\PhoneBook.Domain.Contracts.pdb

@@ -16,3 +16,12 @@ M:\phonebook\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.
 M:\phonebook\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.0\PhoneBook.Domain.Core.csproj.CoreCompileInputs.cache
 M:\phonebook\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.0\PhoneBook.Domain.Core.dll
 M:\phonebook\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.0\PhoneBook.Domain.Core.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Core\bin\Debug\netstandard2.0\PhoneBook.Domain.Core.deps.json
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Core\bin\Debug\netstandard2.0\PhoneBook.Domain.Core.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Core\bin\Debug\netstandard2.0\PhoneBook.Domain.Core.pdb
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.0\PhoneBook.Domain.Core.csprojAssemblyReference.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.0\PhoneBook.Domain.Core.AssemblyInfoInputs.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.0\PhoneBook.Domain.Core.AssemblyInfo.cs
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.0\PhoneBook.Domain.Core.csproj.CoreCompileInputs.cache
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.0\PhoneBook.Domain.Core.dll
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Domain.Core\obj\Debug\netstandard2.0\PhoneBook.Domain.Core.pdb

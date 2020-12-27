@@ -3254,11 +3254,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\phonebook\\maryamphone\\phonebook\\PhoneBook.Infarstructure.DAL\\PhoneBook.Infarstructure.DAL.csproj",
+      "projectUniqueName": "M:\\phonebook\\PhoneBook2021\\maryamphone\\phonebook\\PhoneBook.Infarstructure.DAL\\PhoneBook.Infarstructure.DAL.csproj",
       "projectName": "PhoneBook.Infarstructure.DAL",
-      "projectPath": "M:\\phonebook\\maryamphone\\phonebook\\PhoneBook.Infarstructure.DAL\\PhoneBook.Infarstructure.DAL.csproj",
+      "projectPath": "M:\\phonebook\\PhoneBook2021\\maryamphone\\phonebook\\PhoneBook.Infarstructure.DAL\\PhoneBook.Infarstructure.DAL.csproj",
       "packagesPath": "C:\\Users\\mis\\.nuget\\packages\\",
-      "outputPath": "M:\\phonebook\\maryamphone\\phonebook\\PhoneBook.Infarstructure.DAL\\obj\\",
+      "outputPath": "M:\\phonebook\\PhoneBook2021\\maryamphone\\phonebook\\PhoneBook.Infarstructure.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3276,12 +3276,13 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "M:\\phonebook\\maryamphone\\phonebook\\PhoneBook.Domain.Contracts\\PhoneBook.Domain.Contracts.csproj": {
-              "projectPath": "M:\\phonebook\\maryamphone\\phonebook\\PhoneBook.Domain.Contracts\\PhoneBook.Domain.Contracts.csproj"
+            "M:\\phonebook\\PhoneBook2021\\maryamphone\\phonebook\\PhoneBook.Domain.Contracts\\PhoneBook.Domain.Contracts.csproj": {
+              "projectPath": "M:\\phonebook\\PhoneBook2021\\maryamphone\\phonebook\\PhoneBook.Domain.Contracts\\PhoneBook.Domain.Contracts.csproj"
             },
-            "M:\\phonebook\\maryamphone\\phonebook\\PhoneBook.Domain.Core\\PhoneBook.Domain.Core.csproj": {
-              "projectPath": "M:\\phonebook\\maryamphone\\phonebook\\PhoneBook.Domain.Core\\PhoneBook.Domain.Core.csproj"
+            "M:\\phonebook\\PhoneBook2021\\maryamphone\\phonebook\\PhoneBook.Domain.Core\\PhoneBook.Domain.Core.csproj": {
+              "projectPath": "M:\\phonebook\\PhoneBook2021\\maryamphone\\phonebook\\PhoneBook.Domain.Core\\PhoneBook.Domain.Core.csproj"
             }
           }
         }
@@ -3294,6 +3295,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -3322,7 +3324,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

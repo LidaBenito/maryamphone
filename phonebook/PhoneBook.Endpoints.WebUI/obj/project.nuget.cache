@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qTzAhdOMNvrpgifvUJBkzv12PY0B3yff6FriI5j1XJXwQm4hNJGv5BUgUIBS5SDfNBKNgb/szVOl/6E0XTc8rQ==",
+  "dgSpecHash": "OfubxuNoAqu9qMn/oBWgui/KI4ir/cV4TAenJlorrpQ/DKa1DT5zH6CeG9QwEW+Rm0wHsnvpR+f1g0KqciDDVg==",
   "success": true,
-  "projectFilePath": "M:\\phonebook\\maryamphone\\phonebook\\PhoneBook.Endpoints.WebUI\\PhoneBook.Endpoints.WebUI.csproj",
+  "projectFilePath": "M:\\phonebook\\PhoneBook2021\\maryamphone\\phonebook\\PhoneBook.Endpoints.WebUI\\PhoneBook.Endpoints.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\mis\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
