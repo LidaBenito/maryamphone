@@ -1,0 +1,66 @@
+﻿@model AddNewPersonDisplayModelView
+@section head
+{
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+}
+<form asp-action="Add" asp-controller="People" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div class="form-group">
+
+        <label asp-for="FirstName"></label>
+        <input type="text" asp-for="FirstName" class="form-control" maxlength="50" />
+        <span asp-validation-for="FirstName"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input type="text" asp-for="LastName" class="form-control" maxlength="50" />
+        <span asp-validation-for="LastName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input type="text" asp-for="Email" class="form-control" maxlength="150" />
+        <span asp-validation-for="Email"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Address"></label>
+        <input type="text" asp-for="Address" class="form-control" maxlength="500" />
+        <span asp-validation-for="Address"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Image"></label>
+        <input type="file" asp-for="Image" class="form-control" />
+        <span asp-validation-for="Image"></span>
+    </div>
+
+    @{ List<int> selectedTag = (List<int>)ViewBag.SelectedItem; }
+    <div class="form-group">
+        <label asp-for="TagForDisplay"></label>
+        <select class="form-control select2" name="SelectedTag" multiple>
+            @foreach (var item in Model.TagForDisplay)
+            {
+                if (ViewBag.SelectedItem != null && selectedTag.Contains(item.Id))
+                {
+<option selected value="@item.Id">@item.Title</option> }
+                else
+                {
+<option value="@item.Id">@item.Title</option>}
+            }
+
+        </select>
+    </div>
+    <input type="submit" class="btn btn-primary" value="Save" />
+</form>
+
+
+@section scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <script>$(document).ready(function () {
+            $('.select2').select2();
+        });</script>
+}

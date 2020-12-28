@@ -5,16 +5,34 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PhoneBook.Domain.Contracts.Peoples;
+using PhoneBook.Domain.Contracts.Phones;
+using PhoneBook.Domain.Contracts.Tags;
+using PhoneBook.Infarstructure.DAL.Common;
+using PhoneBook.Infarstructure.DAL.Persons;
+using PhoneBook.Infarstructure.DAL.phones;
+using PhoneBook.Infarstructure.DAL.Tags;
 
 namespace PhoneBook.Endpoints.WebUI
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public IConfiguration Configuration { get; }
+
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+            services.AddScoped<IPersonRepository, PersonRepository>();
+            services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<IPhoneRepository, PhoneRepository>();
+            services.AddDbContext<PhoneBookMaryaContext>(c => c.UseSqlServer(Configuration.GetConnectionString("phoneBook")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -24,11 +42,17 @@ namespace PhoneBook.Endpoints.WebUI
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.Run(async (context) =>
+            app.UseStaticFiles();
+            app.UseIdentity();
+            app.UseMvc(route=>
             {
-                await context.Response.WriteAsync("Hello World!");
+                route.MapRoute(
+                    name:"Default",
+                    template:"{Controller=Home}/{Action=Index}/{Id?}"
+                    
+                    );
             });
+          
         }
     }
 }
