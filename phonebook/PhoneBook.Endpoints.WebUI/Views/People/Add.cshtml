@@ -1,5 +1,5 @@
 ﻿@model AddNewPersonDisplayModelView
-@section head
+@section Head
 {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 }
@@ -44,10 +44,10 @@
             {
                 if (ViewBag.SelectedItem != null && selectedTag.Contains(item.Id))
                 {
-<option selected value="@item.Id">@item.Title</option> }
+                    <option selected value="@item.Id">@item.Title</option> }
                 else
                 {
-<option value="@item.Id">@item.Title</option>}
+                    <option value="@item.Id">@item.Title</option>}
             }
 
         </select>
@@ -56,7 +56,7 @@
 </form>
 
 
-@section scripts
+@section Scripts
 {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 

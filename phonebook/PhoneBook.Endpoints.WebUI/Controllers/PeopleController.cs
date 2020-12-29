@@ -3,6 +3,7 @@ using PhoneBook.Domain.Contracts.Peoples;
 using PhoneBook.Domain.Contracts.Tags;
 using PhoneBook.Domain.Core.Peoples;
 using PhoneBook.Endpoints.WebUI.Models;
+using PhoneBook.Endpoints.WebUI.Models.People;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -27,7 +28,7 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
         }
         public IActionResult List()
         {
-            var model = _personRepository.GetAll();
+            var model = _personRepository.GetAll().ToList();
             return View(model);
         }
         public IActionResult Add()
@@ -54,7 +55,7 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
                 };
                 if (Model?.Image?.Length > 0)
                 {
-                    using(var ms =new MemoryStream())
+                    using (var ms = new MemoryStream())
                     {
                         Model.Image.CopyTo(ms);
                         var filebyte = ms.ToArray();
@@ -76,18 +77,73 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
                 LastName = Model.LastName,
                 FirstName = Model.FirstName
             };
-            modelforDisplay.TagForDisplay= _tagRepository.GetAll().ToList();
+            modelforDisplay.TagForDisplay = _tagRepository.GetAll().ToList();
             return View(modelforDisplay);
         }
-    
-        public IActionResult Update()
+
+        public IActionResult Update(int personid)
         {
-            return View();
+            var result = _personRepository.Get(personid);
+            if (result != null)
+            {
+                UpdatePersonModelView model = new UpdatePersonModelView
+                {
+                    id = result.Id,
+                    Email = result.Email,
+                    Address = result.Address,
+                    LastName = result.LastName,
+                    FirstName = result.FristName,
+                    //Image?!
+
+                };
+                return View(model);
+
+            }
+            return NotFound();
         }
-        public IActionResult Detele()
+        [HttpPut]
+        public IActionResult Update(UpdatePersonModelView updatePerson)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                Person person = new Person
+                {
+                    FristName = updatePerson.FirstName,
+                    LastName = updatePerson.LastName,
+                    Address = updatePerson.LastName,
+                    Email = updatePerson.Email,
+                    Id = updatePerson.id
+                };
+                if (updatePerson?.Image?.Length > 0)
+                {
+                    using (var ms = new MemoryStream())
+                    {
+                        updatePerson.Image.CopyTo(ms);
+                        var fileBytes = ms.ToArray();
+                        person.Image = Convert.ToBase64String(fileBytes);
+
+                    }
+                }
+                //Person result=_personRepository.  where is Update method?!!!!
+                //if (result != null)
+                //{
+                //    return RedirectToAction("Index");
+                //}
+            }
+            return View(updatePerson);
         }
+        //public IActionResult Detele(int id)
+        //{
+        //    var person = _personRepository.Get(id);
+        //    if (person!=null)
+        //    {
+        //        e model=new UpdatePersonModelView
+        //        {
+
+        //        }
+        //    }
+        //    return View();
+        //}
 
     }
 }
