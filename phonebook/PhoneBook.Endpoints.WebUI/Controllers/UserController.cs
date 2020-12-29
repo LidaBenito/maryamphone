@@ -8,7 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace PhoneBook.Endpoints.WebUI.Controllers
-{[Authorize]
+{
+    [Authorize(Roles ="admin")]
     public class UserController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
@@ -116,6 +117,16 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             return View();
 
 
+        }
+        public IActionResult AddToRole(int id,string roleName)
+        {
+            var user = _userManager.FindByIdAsync(id.ToString()).Result;
+            if (user != null)
+            {
+                var result = _userManager.AddToRoleAsync(user, roleName).Result;
+                    //نمایش رل های کاربر  _userManager.GetUsersInRoleAsync();
+            }
+            return RedirectToAction("Index");
         }
 
     }
