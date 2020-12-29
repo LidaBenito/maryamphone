@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -21,11 +20,5 @@ namespace PhoneBook.Endpoints.WebUI.Models.AAA
 
         public string Email { get; set; }
     
-    }
-    public class UpdateUserViewModel
-    {
-        public string Email { get; set; }
-
-
     }
 }

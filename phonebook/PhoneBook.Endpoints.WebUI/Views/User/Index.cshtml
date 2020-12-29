@@ -9,7 +9,7 @@
     <tr>
         <th>UseName</th>
         <th>Email</th>
-        <th></th>
+        <th>Actions</th>
     </tr>
     @if (Model.Any() == true)
     {
@@ -18,7 +18,12 @@
             <tr>
                 <td>@item.UserName</td>
                 <td>@item.Email</td>
-            </tr>
+                <td>
+                    <a asp-action="Update" asp-controller="User" asp-route-id="@item.Id">Edit</a>
+                    <a asp-action="Delete" asp-controller="User" asp-route-id="@item.Id">Delete</a>
+
+                </td>
+            </tr> 
 
         }
     }

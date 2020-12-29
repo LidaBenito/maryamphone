@@ -31,12 +31,23 @@ namespace PhoneBook.Endpoints.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            int Minpassword = int.Parse(Configuration["MinPasswordChar"]);
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<IPhoneRepository, PhoneRepository>();
             services.AddDbContext<PhoneBookMaryaContext>(c => c.UseSqlServer(Configuration.GetConnectionString("phoneBook")));
             services.AddDbContext<UserDbContext>(c => c.UseSqlServer(Configuration.GetConnectionString("aaa")));
-            services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<UserDbContext>() ;
+            services.AddScoped<IPasswordValidator<AppUser>, MyPasswordValidator>();
+            services.AddScoped<IUserValidator<AppUser>, MyUserNameValidator>();
+            services.AddIdentity<AppUser, IdentityRole>(c=>
+            {
+                c.User.RequireUniqueEmail = true;
+                c.Password.RequireDigit = false;
+                c.Password.RequiredLength = Minpassword;
+                c.Password.RequireNonAlphanumeric = false;
+                c.Password.RequireUppercase = false;
+                c.Password.RequiredUniqueChars = 1;
+            }).AddEntityFrameworkStores<UserDbContext>() ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

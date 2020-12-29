@@ -93,8 +93,26 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             return NotFound();
 
         }
-        public IActionResult Delete()
+        public IActionResult Delete(int id)
         {
+            var user = _userManager.FindByIdAsync(id.ToString()).Result;
+            if (user != null)
+            {
+                var result = _userManager.DeleteAsync(user).Result;
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    foreach (var item in result.Errors)
+                    {
+                        ModelState.AddModelError(item.Code, item.Description);
+
+                    }
+
+                }
+            }
             return View();
 
 
