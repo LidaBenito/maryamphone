@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PhoneBook.Domain.Contracts.Peoples;
 using PhoneBook.Domain.Contracts.Phones;
 using PhoneBook.Domain.Contracts.Tags;
+using PhoneBook.Endpoints.WebUI.Models.AAA;
 using PhoneBook.Infarstructure.DAL.Common;
 using PhoneBook.Infarstructure.DAL.Persons;
 using PhoneBook.Infarstructure.DAL.phones;
@@ -33,6 +35,8 @@ namespace PhoneBook.Endpoints.WebUI
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<IPhoneRepository, PhoneRepository>();
             services.AddDbContext<PhoneBookMaryaContext>(c => c.UseSqlServer(Configuration.GetConnectionString("phoneBook")));
+            services.AddDbContext<UserDbContext>(c => c.UseSqlServer(Configuration.GetConnectionString("aaa")));
+            services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<UserDbContext>() ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
