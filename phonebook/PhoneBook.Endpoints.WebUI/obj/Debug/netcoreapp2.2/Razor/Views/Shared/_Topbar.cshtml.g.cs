@@ -18,8 +18,13 @@ using PhoneBook.Endpoints.WebUI.Models;
 
 #line default
 #line hidden
+#line 3 "M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\Views\_ViewImports.cshtml"
+using PhoneBook.Endpoints.WebUI.Models.AAA;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"26af157e4f841a5697eb29a06cb61289c791039e", @"/Views/Shared/_Topbar.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"88f332849543cd6db4838e67cd171acb36c64bb4", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4678a8d08d1ca1b43a1601b5c65e777078335def", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Topbar : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -51,7 +56,7 @@ using PhoneBook.Endpoints.WebUI.Models;
             WriteLiteral("<nav class=\"navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow\">\n\n    <button id=\"sidebarToggleTop\" class=\"btn btn-link d-md-none rounded-circle mr-3\">\n        <i class=\"fa fa-bars\"></i>\n    </button>\n\n    ");
             EndContext();
             BeginContext(228, 528, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26af157e4f841a5697eb29a06cb61289c791039e4306", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26af157e4f841a5697eb29a06cb61289c791039e4494", async() => {
                 BeginContext(329, 420, true);
                 WriteLiteral(@"
         <div class=""input-group"">
@@ -94,7 +99,7 @@ using PhoneBook.Endpoints.WebUI.Models;
                 ");
             EndContext();
             BeginContext(1220, 589, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26af157e4f841a5697eb29a06cb61289c791039e6762", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26af157e4f841a5697eb29a06cb61289c791039e6950", async() => {
                 BeginContext(1274, 528, true);
                 WriteLiteral(@"
                     <div class=""input-group"">

@@ -18,8 +18,13 @@ using PhoneBook.Endpoints.WebUI.Models;
 
 #line default
 #line hidden
+#line 3 "M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\Views\_ViewImports.cshtml"
+using PhoneBook.Endpoints.WebUI.Models.AAA;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d1062a156459fa690d0d8f0c682542bfd5973d42", @"/Views/People/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"88f332849543cd6db4838e67cd171acb36c64bb4", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4678a8d08d1ca1b43a1601b5c65e777078335def", @"/Views/_ViewImports.cshtml")]
     public class Views_People_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<PhoneBook.Domain.Core.Peoples.Person>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "People", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -95,7 +100,7 @@ using PhoneBook.Endpoints.WebUI.Models;
             WriteLiteral("</td>\n    <td>");
             EndContext();
             BeginContext(404, 81, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1062a156459fa690d0d8f0c682542bfd5973d425449", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1062a156459fa690d0d8f0c682542bfd5973d425637", async() => {
                 BeginContext(475, 6, true);
                 WriteLiteral("Detail");
                 EndContext();

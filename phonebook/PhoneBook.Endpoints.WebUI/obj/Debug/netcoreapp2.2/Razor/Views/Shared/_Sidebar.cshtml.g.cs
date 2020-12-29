@@ -18,8 +18,13 @@ using PhoneBook.Endpoints.WebUI.Models;
 
 #line default
 #line hidden
+#line 3 "M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\Views\_ViewImports.cshtml"
+using PhoneBook.Endpoints.WebUI.Models.AAA;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"567bbbf55b45a42a9fd24038ae245f3ac641d28e", @"/Views/Shared/_Sidebar.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"88f332849543cd6db4838e67cd171acb36c64bb4", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4678a8d08d1ca1b43a1601b5c65e777078335def", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Sidebar : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("collapse-item"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -94,7 +99,7 @@ using PhoneBook.Endpoints.WebUI.Models;
                 ");
             EndContext();
             BeginContext(1408, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "567bbbf55b45a42a9fd24038ae245f3ac641d28e6773", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "567bbbf55b45a42a9fd24038ae245f3ac641d28e6961", async() => {
                 BeginContext(1474, 3, true);
                 WriteLiteral("Add");
                 EndContext();
@@ -119,7 +124,7 @@ using PhoneBook.Endpoints.WebUI.Models;
             WriteLiteral("\n                ");
             EndContext();
             BeginContext(1498, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "567bbbf55b45a42a9fd24038ae245f3ac641d28e8446", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "567bbbf55b45a42a9fd24038ae245f3ac641d28e8634", async() => {
                 BeginContext(1565, 4, true);
                 WriteLiteral("List");
                 EndContext();
@@ -158,7 +163,7 @@ using PhoneBook.Endpoints.WebUI.Models;
                 ");
             EndContext();
             BeginContext(2207, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "567bbbf55b45a42a9fd24038ae245f3ac641d28e10766", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "567bbbf55b45a42a9fd24038ae245f3ac641d28e10954", async() => {
                 BeginContext(2273, 4, true);
                 WriteLiteral("List");
                 EndContext();
@@ -183,7 +188,7 @@ using PhoneBook.Endpoints.WebUI.Models;
             WriteLiteral("\n                ");
             EndContext();
             BeginContext(2298, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "567bbbf55b45a42a9fd24038ae245f3ac641d28e12441", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "567bbbf55b45a42a9fd24038ae245f3ac641d28e12629", async() => {
                 BeginContext(2366, 8, true);
                 WriteLiteral("Add User");
                 EndContext();
