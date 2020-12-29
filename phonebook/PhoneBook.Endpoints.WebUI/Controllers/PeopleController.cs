@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PhoneBook.Domain.Contracts.Peoples;
 using PhoneBook.Domain.Contracts.Tags;
 using PhoneBook.Domain.Core.Peoples;
@@ -12,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace PhoneBook.Endpoints.WebUI.Controllers
 {
+    [Authorize]
     public class PeopleController : Controller
     {
         private readonly IPersonRepository _personRepository;
