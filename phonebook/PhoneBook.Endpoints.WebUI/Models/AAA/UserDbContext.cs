@@ -4,7 +4,7 @@ using static PhoneBook.Endpoints.WebUI.Models.AAA.MyUserNameValidator;
 
 namespace PhoneBook.Endpoints.WebUI.Models.AAA
 {
-    public class UserDbContext : IdentityDbContext<AppUser>
+    public class UserDbContext : IdentityDbContext<AppUser, MyIdentityRole,int>
     {
         public DbSet<BadPassword> BadPasswords { get; set; }
         public UserDbContext(DbContextOptions options) : base(options)

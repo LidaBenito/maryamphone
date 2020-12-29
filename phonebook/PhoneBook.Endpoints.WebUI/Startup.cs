@@ -39,7 +39,7 @@ namespace PhoneBook.Endpoints.WebUI
             services.AddDbContext<UserDbContext>(c => c.UseSqlServer(Configuration.GetConnectionString("aaa")));
             services.AddScoped<IPasswordValidator<AppUser>, MyPasswordValidator>();
             services.AddScoped<IUserValidator<AppUser>, MyUserNameValidator>();
-            services.AddIdentity<AppUser, IdentityRole>(c=>
+            services.AddIdentity<AppUser, MyIdentityRole>(c=>
             {
                 c.User.RequireUniqueEmail = true;
                 c.Password.RequireDigit = false;

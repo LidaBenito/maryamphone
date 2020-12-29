@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using PhoneBook.Endpoints.WebUI.Models.AAA;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
 {
     public class RoleController : Controller
     {
-        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly RoleManager<MyIdentityRole> _roleManager;
 
-        public RoleController(RoleManager<IdentityRole> roleManager)
+        public RoleController(RoleManager<MyIdentityRole> roleManager)
         {
             _roleManager = roleManager;
         }
@@ -22,7 +23,7 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
         }
         public IActionResult Create(string roleName)
         {
-            IdentityRole role = new IdentityRole
+            MyIdentityRole role = new MyIdentityRole
             {
                 Name = roleName
             };

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PhoneBook.Endpoints.WebUI.Models.AAA
 {
-    public class AppUser:IdentityUser
+    public class AppUser:IdentityUser<int>
     {
         public string FirstName{ get; set; }
         public string LastName{ get; set; }
