@@ -13,5 +13,6 @@ namespace PhoneBook.Domain.Contracts.Common
         TEntity Get(int id);
         void Delete(int id);
 
+
     }
 }

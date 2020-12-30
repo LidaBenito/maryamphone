@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace PhoneBook.Endpoints.WebUI.Models.AAA
 {
-    public class AppUser:IdentityUser<int>
+    public class AppUser:IdentityUser
     {
         public string FirstName{ get; set; }
         public string LastName{ get; set; }
         public DateTime? Birthdate{ get; set; }
     }
-    public class MyIdentityRole : IdentityRole<int>
+    public class MyIdentityRole : IdentityRole
     {
         
     }

@@ -17,7 +17,12 @@
     <td>@item.FristName</td>
     <td>@item.LastName</td>
     <td>@item.Email</td>
-    <td><a asp-controller="People" asp-action="Detail" asp-route-id="@item.Id">Detail</a></td>
+    <td>
+        <a asp-controller="People" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+        |
+        <a asp-controller="People" asp-action="Detele" asp-route-id="@item.Id">Detele</a>
+
+    </td>
 </tr>
 }
 </table>}

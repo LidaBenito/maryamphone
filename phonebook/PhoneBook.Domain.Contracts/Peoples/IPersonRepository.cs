@@ -9,5 +9,7 @@ namespace PhoneBook.Domain.Contracts.Peoples
 {
      public interface IPersonRepository:IBaseRepository<Person>
     {
+        void Update(Person person);
+
     }
 }

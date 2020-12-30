@@ -69,9 +69,9 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
 
         }
         [HttpPut]
-        public IActionResult Update(UpdateUserViewModel updateUserViewModel,int id)
+        public IActionResult Update(UpdateUserViewModel updateUserViewModel,string id)
         {
-            var user = _userManager.FindByIdAsync(id.ToString()).Result;
+            var user = _userManager.FindByIdAsync(id).Result;
             if (user != null)
             {
                 user.Email = updateUserViewModel.Email;
@@ -94,9 +94,9 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             return NotFound();
 
         }
-        public IActionResult Delete(int id)
+        public IActionResult Delete(string id)
         {
-            var user = _userManager.FindByIdAsync(id.ToString()).Result;
+            var user = _userManager.FindByIdAsync(id).Result;
             if (user != null)
             {
                 var result = _userManager.DeleteAsync(user).Result;
@@ -118,16 +118,15 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
 
 
         }
-        public IActionResult AddToRole(int id,string roleName)
+        public IActionResult AddToRole(string id,string roleName)
         {
-            var user = _userManager.FindByIdAsync(id.ToString()).Result;
+            var user = _userManager.FindByIdAsync(id).Result;
             if (user != null)
             {
                 var result = _userManager.AddToRoleAsync(user, roleName).Result;
                     //نمایش رل های کاربر  _userManager.GetUsersInRoleAsync();
             }
-            return RedirectToAction("Index");
-        }
+            return RedirectToAction("Index");        }
 
     }
 }

@@ -27,7 +27,7 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             {
                 Name = roleName
             };
-            var result = _roleManager.CreateAsync(role);
+            var result = _roleManager.CreateAsync(role).Result;
             return RedirectToAction("Index");
 
         }

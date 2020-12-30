@@ -95,7 +95,7 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
                     Address = result.Address,
                     LastName = result.LastName,
                     FirstName = result.FristName,
-                    //Image?!
+
 
                 };
                 return View(model);
@@ -103,49 +103,30 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             }
             return NotFound();
         }
-        [HttpPut]
+        [HttpPost]
         public IActionResult Update(UpdatePersonModelView updatePerson)
         {
             if (ModelState.IsValid)
             {
                 Person person = new Person
                 {
-                    FristName = updatePerson.FirstName,
-                    LastName = updatePerson.LastName,
-                    Address = updatePerson.LastName,
-                    Email = updatePerson.Email,
-                    Id = updatePerson.id
+                    FristName=updatePerson.FirstName,
+                    LastName=updatePerson.LastName,
+                    Address=updatePerson.Address,
+                    Email=updatePerson.Email,
+                    Id=updatePerson.id
                 };
-                if (updatePerson?.Image?.Length > 0)
-                {
-                    using (var ms = new MemoryStream())
-                    {
-                        updatePerson.Image.CopyTo(ms);
-                        var fileBytes = ms.ToArray();
-                        person.Image = Convert.ToBase64String(fileBytes);
-
-                    }
-                }
-                //Person result=_personRepository.  where is Update method?!!!!
-                //if (result != null)
-                //{
-                //    return RedirectToAction("Index");
-                //}
+                _personRepository.Update(person);
+                
             }
             return View(updatePerson);
         }
-        //public IActionResult Detele(int id)
-        //{
-        //    var person = _personRepository.Get(id);
-        //    if (person!=null)
-        //    {
-        //        e model=new UpdatePersonModelView
-        //        {
+        public IActionResult Detele(int id)
+        {
+             _personRepository.Delete(id);
 
-        //        }
-        //    }
-        //    return View();
-        //}
+            return RedirectToAction("List");
+        }
 
     }
 }

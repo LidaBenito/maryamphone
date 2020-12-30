@@ -12,5 +12,15 @@ namespace PhoneBook.Infarstructure.DAL.Persons
         public PersonRepository(PhoneBookMaryaContext dbContext) : base(dbContext)
         {
         }
+
+        public void Update(Person person)
+        {
+            var result = dbContext.People.Find(person.Id);
+            result.Address = person.Address;
+            result.Email = person.Email;
+            result.FristName = person.FristName;
+            result.LastName = person.LastName;
+            dbContext.SaveChanges();
+        }
     }
 }

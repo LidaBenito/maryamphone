@@ -9,7 +9,7 @@ namespace PhoneBook.Infarstructure.DAL.Common
 {
     public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity, new()
     {
-        private readonly PhoneBookMaryaContext dbContext;
+        protected readonly PhoneBookMaryaContext dbContext;
 
         public BaseRepository(PhoneBookMaryaContext dbContext)
         {
@@ -24,10 +24,7 @@ namespace PhoneBook.Infarstructure.DAL.Common
 
         public void Delete(int id)
         {
-            TEntity entity = new TEntity
-            {
-                Id = id
-            };
+            var entity = Get(id);
             dbContext.Remove(entity);
 
         }
