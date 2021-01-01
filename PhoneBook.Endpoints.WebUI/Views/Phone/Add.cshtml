@@ -5,6 +5,8 @@
 @{
 }
 <form asp-controller="Phone" asp-action="Add" method="post">
+    @*@Html.HiddenFor(Model => Model.PersonId)*@
+    @Html.Hidden("PersonId")
     <div class="d-flex">
         <div class="form-group flex-grow-1">
             <label asp-for="Number"></label>

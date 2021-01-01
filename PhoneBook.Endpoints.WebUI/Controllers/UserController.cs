@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PhoneBook.Endpoints.WebUI.Controllers
 {
-    [Authorize(Roles ="admin")]
+    //[Authorize(Roles ="admin")]
     public class UserController : Controller
     {
         private readonly UserManager<AppUser> _userManager;

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
 using PhoneBook.Domain.Contracts.Phones;
 using PhoneBook.Domain.Core.Phones;
 using PhoneBook.Endpoints.WebUI.Models.Phones;
@@ -34,18 +35,18 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             return View(model);
         }
         [HttpPost]
-        public IActionResult Add(AddPhoneViewModel model, [FromRoute] int id)
+        public IActionResult Add(AddPhoneViewModel model)
         {
             if (ModelState.IsValid)
             {
                 Phone phone = new Phone
                 {
-                    Id = id,
+                    PersonId = model.PersonId,
                     PhoneNumber = model.Number,
                     PhoneType = model.Type
                };
                 _phoneRepository.Add(phone);
-                return RedirectToAction("Details", "People");
+                return RedirectToAction("Details", "People", new { id = phone.PersonId });
             }
             else
             {

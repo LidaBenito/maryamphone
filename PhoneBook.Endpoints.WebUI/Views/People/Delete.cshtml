@@ -34,7 +34,6 @@
     </div>
 </div>
 <br />
-<form asp-action="DeleteConfirm" asp-controller="People" method="post" method="post">
-    <input type="hidden" asp-for="personId" />
+<form asp-action="ConfirmDelete" asp-controller="People" asp-route-id=@Model.personId method="post" >
     <input type="submit" class="btn btn-danger" value="حذف شود" />
 </form>

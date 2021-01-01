@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace PhoneBook.Endpoints.WebUI.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class PeopleController : Controller
     {
         private readonly IPersonRepository _personRepository;
@@ -50,10 +50,10 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
                     FristName = Model.FirstName,
                     LastName = Model.LastName,
                     Email = Model.Email,
-                    PersonTags = new List<PersonTag>(Model.SelectedTag.Select(c => new PersonTag
-                    {
-                        TagId = c
-                    }).ToList())
+                    //PersonTags = new List<PersonTag>(Model.SelectedTag.Select(c => new PersonTag
+                    //{
+                    //    TagId = c
+                    //}).ToList())
                 };
                 if (Model?.Image?.Length > 0)
                 {
@@ -68,7 +68,7 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
                 Person result = _personRepository.Add(person);
                 if (result != null)
                 {
-                    return RedirectToAction("Index");
+                    return RedirectToAction("List");
                 }
             }
             ViewBag.SelectedItem = Model.SelectedTag;

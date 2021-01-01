@@ -26,7 +26,7 @@ namespace PhoneBook.Infarstructure.DAL.Common
         {
             var entity = Get(id);
             dbContext.Remove(entity);
-
+            dbContext.SaveChanges();
         }
 
         public TEntity Get(int id)
