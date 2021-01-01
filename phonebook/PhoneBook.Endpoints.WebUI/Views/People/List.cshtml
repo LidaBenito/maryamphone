@@ -9,7 +9,7 @@
         <th>First Name</th>
         <th>Last Name</th>
         <th>Email</th>
-        <td>Detail</td>
+        <td>Actions</td>
     </tr>
     @foreach (var item in Model)
     {
@@ -18,9 +18,11 @@
     <td>@item.LastName</td>
     <td>@item.Email</td>
     <td>
-        <a asp-controller="People" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+        <a asp-controller="People" asp-action="Details" asp-route-id="@item.Id">Detail</a>
         |
-        <a asp-controller="People" asp-action="Detele" asp-route-id="@item.Id">Detele</a>
+        <a asp-controller="People" asp-action="Delete" asp-route-id="@item.Id">Detele</a>
+        |
+        <a asp-controller="People" asp-action="Update" asp-route-id="@item.Id">Edit</a>
 
     </td>
 </tr>

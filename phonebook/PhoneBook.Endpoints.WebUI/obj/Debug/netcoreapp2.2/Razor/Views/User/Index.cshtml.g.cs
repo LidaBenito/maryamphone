@@ -23,8 +23,23 @@ using PhoneBook.Endpoints.WebUI.Models.AAA;
 
 #line default
 #line hidden
+#line 4 "M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\Views\_ViewImports.cshtml"
+using PhoneBook.Domain.Core.Peoples;
+
+#line default
+#line hidden
+#line 5 "M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\Views\_ViewImports.cshtml"
+using PhoneBook.Endpoints.WebUI.Models.Phones;
+
+#line default
+#line hidden
+#line 6 "M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\Views\_ViewImports.cshtml"
+using PhoneBook.Endpoints.WebUI.Models.People;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d1d92d872c7c72f5c8ec49d27ad218561a360bdf", @"/Views/User/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4678a8d08d1ca1b43a1601b5c65e777078335def", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"519f123e3ea1d32d46025addbd4231fca3445cee", @"/Views/_ViewImports.cshtml")]
     public class Views_User_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<AppUser>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Update", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -97,7 +112,7 @@ using PhoneBook.Endpoints.WebUI.Models.AAA;
             WriteLiteral("</td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(532, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1d92d872c7c72f5c8ec49d27ad218561a360bdf6366", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1d92d872c7c72f5c8ec49d27ad218561a360bdf6929", async() => {
                 BeginContext(601, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -134,7 +149,7 @@ using PhoneBook.Endpoints.WebUI.Models.AAA;
             WriteLiteral("\r\n                    |\r\n                    ");
             EndContext();
             BeginContext(654, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1d92d872c7c72f5c8ec49d27ad218561a360bdf8988", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1d92d872c7c72f5c8ec49d27ad218561a360bdf9551", async() => {
                 BeginContext(723, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
@@ -171,7 +186,7 @@ using PhoneBook.Endpoints.WebUI.Models.AAA;
             WriteLiteral("\r\n                    |\r\n                    ");
             EndContext();
             BeginContext(778, 116, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1d92d872c7c72f5c8ec49d27ad218561a360bdf11613", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1d92d872c7c72f5c8ec49d27ad218561a360bdf12176", async() => {
                 BeginContext(877, 13, true);
                 WriteLiteral("Make It Admin");
                 EndContext();

@@ -10,7 +10,7 @@ using PhoneBook.Infarstructure.DAL.Common;
 namespace PhoneBook.Infarstructure.DAL.Migrations
 {
     [DbContext(typeof(PhoneBookMaryaContext))]
-    [Migration("13990818223536_init")]
+    [Migration("13991012090724_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

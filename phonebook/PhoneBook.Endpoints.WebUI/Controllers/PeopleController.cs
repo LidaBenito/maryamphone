@@ -121,11 +121,43 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             }
             return View(updatePerson);
         }
-        public IActionResult Detele(int id)
+        public IActionResult Delete(int id)
         {
-             _personRepository.Delete(id);
+            var person = _personRepository.Get(id);
+            if (person != null)
+            {
+                DetailsPersonViewModel model = new DetailsPersonViewModel()
+                {
+                    personId = person.Id,
+                    FirstName = person.FristName,
+                    LastName = person.LastName,
+                    Email = person.Email,
+                    Address = person.Address,
 
-            return RedirectToAction("List");
+                };
+                return View(model);
+
+            }
+
+            return NotFound();
+        }
+        [HttpPost]
+        public IActionResult ConfirmDelete(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                 _personRepository.Delete(id);
+                return RedirectToAction("List");
+
+            }
+
+            return RedirectToAction("Details", new { id = id});
+
+        }
+        public IActionResult Details([FromRoute] int id)
+        {
+            var result = _personRepository.GetPeronWithPhoneNumber(id);
+            return View(result);
         }
 
     }

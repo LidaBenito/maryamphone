@@ -5,7 +5,7 @@ namespace PhoneBook.Endpoints.WebUI.Models
 {
     public abstract class NewPersonModelView
     {
-        [Required(ErrorMessage = "لطفا نام را فارسی وارد کنید ")]
+        [Required]
         [StringLength(50, MinimumLength = 2)]
         public string FirstName { get; set; }
         [Required]

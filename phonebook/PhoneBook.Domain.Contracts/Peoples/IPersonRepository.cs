@@ -10,6 +10,8 @@ namespace PhoneBook.Domain.Contracts.Peoples
      public interface IPersonRepository:IBaseRepository<Person>
     {
         void Update(Person person);
+ //       List<Person> GetActivePerson();
+        Person GetPeronWithPhoneNumber(int id);
 
     }
 }

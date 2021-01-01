@@ -73,3 +73,7 @@ M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\obj\D
 M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\User\Create.cshtml.g.cs
 M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.cshtml.g.cs
 M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Role\Index.cshtml.g.cs
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\People\Details.cshtml.g.cs
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Phone\Add.cshtml.g.cs
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\People\Delete.cshtml.g.cs
+M:\phonebook\PhoneBook2021\maryamphone\phonebook\PhoneBook.Endpoints.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\People\Update.cshtml.g.cs
