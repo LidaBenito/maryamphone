@@ -25,13 +25,13 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
 
         public IActionResult List()
         {
-          
+
             return View();
         }
-        public IActionResult Add([FromRoute]int id)
+        public IActionResult Add([FromRoute] int id)
         {
             AddPhoneViewModel model = new AddPhoneViewModel();
-            model.PersonId = id;
+            model.Personid = id;
             return View(model);
         }
         [HttpPost]
@@ -41,17 +41,17 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             {
                 Phone phone = new Phone
                 {
-                    PersonId = model.PersonId,
+                    PersonId = model.Personid,
                     PhoneNumber = model.Number,
                     PhoneType = model.Type
-               };
+                };
                 _phoneRepository.Add(phone);
-                return RedirectToAction("Details", "People", new { id = phone.PersonId });
+                return RedirectToAction("Details", "People",new { id=phone.PersonId});
             }
             else
             {
 
-            return View(model);
+                return View(model);
             }
 
         }

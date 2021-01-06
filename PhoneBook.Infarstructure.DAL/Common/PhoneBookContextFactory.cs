@@ -6,13 +6,13 @@ using System.Text;
 
 namespace PhoneBook.Infarstructure.DAL.Common
 {
-    public class PhoneBookContextFactory : IDesignTimeDbContextFactory<PhoneBookMaryaContext>
+    public class PhoneBookContextFactory : IDesignTimeDbContextFactory<PhoneBookContext>
     {
-        public PhoneBookMaryaContext CreateDbContext(string[] args)
+        public PhoneBookContext CreateDbContext(string[] args)
         {
-            var builder = new DbContextOptionsBuilder<PhoneBookMaryaContext>();
-            builder.UseSqlServer("Server=.;Database=PhoneBookMaryaDb;Integrated Security=True;MultipleActiveResultSets=true");
-            return new PhoneBookMaryaContext(builder.Options);
+            var builder = new DbContextOptionsBuilder<PhoneBookContext>();
+            builder.UseSqlServer("Server=.;Database=PhoneBookDb;Integrated Security=True;MultipleActiveResultSets=true");
+            return new PhoneBookContext(builder.Options);
         }
     }
 }

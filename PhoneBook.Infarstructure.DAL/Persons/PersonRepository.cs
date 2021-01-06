@@ -11,7 +11,7 @@ namespace PhoneBook.Infarstructure.DAL.Persons
 {
     public class PersonRepository : BaseRepository<Person>, IPersonRepository
     {
-        public PersonRepository(PhoneBookMaryaContext dbContext) : base(dbContext)
+        public PersonRepository(PhoneBookContext dbContext) : base(dbContext)
         {
         }
 
@@ -27,7 +27,7 @@ namespace PhoneBook.Infarstructure.DAL.Persons
             return result;
         }
        
-        public void Update(Person person)
+        public Person Update(Person person)
         {
             var result = dbContext.People.Find(person.Id);
             result.Address = person.Address;
@@ -35,6 +35,7 @@ namespace PhoneBook.Infarstructure.DAL.Persons
             result.FristName = person.FristName;
             result.LastName = person.LastName;
             dbContext.SaveChanges();
+            return (result);
         }
     }
 }

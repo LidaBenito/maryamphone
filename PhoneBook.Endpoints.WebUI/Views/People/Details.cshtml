@@ -1,67 +1,74 @@
-﻿@model Person
+﻿@model DetailsPersonViewModel
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
-<h1>Details of person @Model.Id</h1>
-<div class="d-flex justify-content-lg-start">
-    <div class="border-left-danger">
-        <img src="data:image/jpeg;base64, @Model.Image" alt="@Model.FristName @Model.LastName" width="250" />
-    </div>
-    <div class="border-left-danger ml-4 p-2 text-lg">
-        <strong class="text-black-50 ">Full Name: </strong><span class="d-block mb-3">@Model.FristName @Model.LastName</span>
-        <strong class="text-black-50">Email: </strong><span class="d-block mb-3">@Model.Email</span>
-        <strong class="text-black-50">Address: </strong><span class="d-block mb-3">@Model.Address</span>
-    </div>
-    <div>
-        <a class="btn btn-danger" data-toggle="modal" data-target="#myModal" style="width: 200px;">Delete</a>
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+@Html.Hidden("personId")
 
-                <!-- Modal content-->
-                <div class="modal-content pl-2 pt-2">
-                    <label>Are you Shure?</label>
-                    <div class="modal-footer">
-                        <a class="btn btn-success" asp-controller="People" asp-action="Delete" asp-route-Id="@Model.Id">Yes</a>
-                        <a class="btn btn-danger" data-dismiss="modal">No</a>
-                    </div>
-                </div>
+<h1>Contact Information</h1>
 
-            </div>
+<div class="row">
+    <div class="col-md-2 ">
+        @{ var imgSrc = String.Format("data:image/gif;base64,{0}", Model.Image); }
+
+        <img src="@imgSrc" height="150" width="150" class="img-thumbnail" alt="Alternate Text" />
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+        <div>
+            <b><label asp-for="FirstName"></label>:</b> @Model.FirstName
         </div>
+        <div>
+            <b><label asp-for="LastName"></label> :</b> @Model.LastName
+        </div>
+        <div>
+            <b><label asp-for="Email"></label> :</b> @Model.Email
+        </div>
+        <div>
+            <b><label asp-for="Address"></label> :</b> @Model.Address
+        </div>
+
+        <a class=" btn-sm btn-outline-primary" asp-controller="people" asp-action="Update" asp-route-id="@Model.personId"><i class="fa fa-edit"></i></a>
+        <a class=" btn-sm btn-outline-danger" asp-controller="people" asp-action="Delete" asp-route-id="@Model.personId"><i class="fa fa-trash"></i></a>
     </div>
+
+    <div class="col-12">
+        <b><label asp-for="Tags"></label> :</b>
+        @foreach (var tag in Model.Tags)
+        {
+<a href="#" class="badge badge-primary">@tag.Title</a>}
+
+    </div>
+
+
 </div>
-<div class="mt-5">
-    <h2> Phones of person @Model.Id</h2>
-    <table class="table table-bordered table-striped">
-        <tr>
-            <th>Row</th>
-            <th>Type</th>
-            <th>Number</th>
-        </tr>
-        @if (Model.Phones != null && Model.Phones.Count > 0)
-        {
-            @foreach (var item in Model.Phones)
-            {
-                <tr>
-                    <td>@item.Id</td>
-                    <td>@item.PhoneType</td>
-                    <td>@item.PhoneNumber</td>
-                </tr>
+<br />
 
-            }
 
-        }
-        else
-        {
+
+<h3><label asp-for="phone"></label></h3>
+<div class="row">
+
+    <a class=" col-2 btn btn-outline-primary" asp-controller="Phone" asp-action="Add" asp-route-id="@Model.personId">Add number</a>
+
+    <div class="table-responsive pt-2">
+        <table class="table table-striped table-bordered">
             <tr>
-                <td colspan="3">Don't Have Phones Number</td>
+                <th>Row</th>
+                <th>type</th>
+                <th>Number</th>
             </tr>
-        }
-    </table>
-    <div class="d-flex justify-content-end">
-        <a class="btn btn-primary" asp-controller="Phone" asp-action="Add" asp-route-Id="@Model.Id">Insert</a>
+            @{ int i = 0;}
+            @foreach (var p in Model.phone)
+            {
+
+<tr>
+    <td>@{++i;}@i</td>
+    <td>@p.PhoneType.ToString()</td>
+    <td>@p.PhoneNumber</td>
+</tr>            }
+        </table>
+
     </div>
 </div>

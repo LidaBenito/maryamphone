@@ -35,7 +35,7 @@ namespace PhoneBook.Endpoints.WebUI
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<IPhoneRepository, PhoneRepository>();
-            services.AddDbContext<PhoneBookMaryaContext>(c => c.UseSqlServer(Configuration.GetConnectionString("phoneBook")));
+            services.AddDbContext<PhoneBookContext>(c => c.UseSqlServer(Configuration.GetConnectionString("phoneBook")));
             services.AddDbContext<UserDbContext>(c => c.UseSqlServer(Configuration.GetConnectionString("aaa")));
             services.AddScoped<IPasswordValidator<AppUser>, MyPasswordValidator>();
             services.AddScoped<IUserValidator<AppUser>, MyUserNameValidator>();

@@ -83,9 +83,9 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             return View(modelforDisplay);
         }
 
-        public IActionResult Update(int personid)
+        public IActionResult Update([FromRoute] int id)
         {
-            var result = _personRepository.Get(personid);
+            var result = _personRepository.Get(id);
             if (result != null)
             {
                 UpdatePersonModelView model = new UpdatePersonModelView
@@ -117,7 +117,7 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
                     Id=updatePerson.id
                 };
                 _personRepository.Update(person);
-                
+                return RedirectToAction("List");
             }
             return View(updatePerson);
         }
@@ -154,10 +154,24 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             return RedirectToAction("Details", new { id = id});
 
         }
-        public IActionResult Details([FromRoute] int id)
+        public IActionResult Details( int id)
         {
             var result = _personRepository.GetPeronWithPhoneNumber(id);
-            return View(result);
+            if (result != null)
+            {
+                DetailsPersonViewModel model = new DetailsPersonViewModel()
+                {   
+                   personId=result.Id,
+                    Address = result.Address,
+                    FirstName = result.FristName,
+                    LastName = result.LastName,
+                    phone=result.Phones,
+                    Email = result.Email
+
+                };
+                return View(model);
+            }
+            return NotFound();
         }
 
     }

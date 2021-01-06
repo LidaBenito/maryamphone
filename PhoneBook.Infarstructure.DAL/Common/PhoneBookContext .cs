@@ -11,14 +11,14 @@ using System.Text;
 
 namespace PhoneBook.Infarstructure.DAL.Common
 {
-    public class PhoneBookMaryaContext : DbContext
+    public class PhoneBookContext : DbContext
     {
         public DbSet<Tag>  Tags{ get; set; }
         public DbSet<Phone> Phones{ get; set; }
         public DbSet<Person> People{ get; set; }
         public DbSet<PersonTag> PersonTags { get; set; }
 
-        public PhoneBookMaryaContext( DbContextOptions<PhoneBookMaryaContext> options) : base(options)
+        public PhoneBookContext(DbContextOptions<PhoneBookContext> options) : base(options)
         {
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

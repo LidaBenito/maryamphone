@@ -43,9 +43,9 @@ namespace PhoneBook.Infarstructure.DAL.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    PersonId = table.Column<int>(nullable: false),
                     PhoneNumber = table.Column<string>(maxLength: 20, nullable: true),
-                    PhoneType = table.Column<int>(nullable: false),
-                    PersonId = table.Column<int>(nullable: true)
+                    PhoneType = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -55,7 +55,7 @@ namespace PhoneBook.Infarstructure.DAL.Migrations
                         column: x => x.PersonId,
                         principalTable: "People",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

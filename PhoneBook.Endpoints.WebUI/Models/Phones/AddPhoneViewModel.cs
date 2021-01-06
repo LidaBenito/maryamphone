@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using PhoneBook.Domain.Core.Phones;
+using PhoneBook.Domain.Core.Tags;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -10,12 +11,11 @@ namespace PhoneBook.Endpoints.WebUI.Models.Phones
 {
     public  class AddPhoneViewModel
     {
-        public int PersonId{ get; set; }
+        public int Personid{ get; set; }
         [Required]
         [StringLength(15,MinimumLength =8)]
         public string Number{ get; set; }
         public PhoneType Type { get; set; }
-
         public List<SelectListItem> PhoneTypes { get; set; }
         public AddPhoneViewModel()
         {

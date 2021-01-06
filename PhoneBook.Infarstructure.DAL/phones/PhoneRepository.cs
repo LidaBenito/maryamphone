@@ -9,7 +9,7 @@ namespace PhoneBook.Infarstructure.DAL.phones
 {
     public class PhoneRepository : BaseRepository<Phone>, IPhoneRepository
     {
-        public PhoneRepository(PhoneBookMaryaContext dbContext) : base(dbContext)
+        public PhoneRepository(PhoneBookContext dbContext) : base(dbContext)
         {
         }
     }

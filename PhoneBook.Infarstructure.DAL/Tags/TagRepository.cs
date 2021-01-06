@@ -9,7 +9,7 @@ namespace PhoneBook.Infarstructure.DAL.Tags
 {
     public class TagRepository : BaseRepository<Tag>, ITagRepository
     {
-        public TagRepository(PhoneBookMaryaContext dbContext) : base(dbContext)
+        public TagRepository(PhoneBookContext dbContext) : base(dbContext)
         {
         }
     }

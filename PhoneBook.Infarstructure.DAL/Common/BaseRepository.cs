@@ -9,9 +9,9 @@ namespace PhoneBook.Infarstructure.DAL.Common
 {
     public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity, new()
     {
-        protected readonly PhoneBookMaryaContext dbContext;
+        protected readonly PhoneBookContext dbContext;
 
-        public BaseRepository(PhoneBookMaryaContext dbContext)
+        public BaseRepository(PhoneBookContext dbContext)
         {
             this.dbContext = dbContext;
         }
@@ -31,7 +31,8 @@ namespace PhoneBook.Infarstructure.DAL.Common
 
         public TEntity Get(int id)
         {
-            return dbContext.Set<TEntity>().Find(id);
+            TEntity entity = dbContext.Set<TEntity>().Find(id);
+            return (entity);
         }
 
         public IQueryable<TEntity> GetAll()
