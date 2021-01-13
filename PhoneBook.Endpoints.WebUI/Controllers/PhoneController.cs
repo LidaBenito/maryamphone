@@ -46,7 +46,7 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
                     PhoneType = model.Type
                 };
                 _phoneRepository.Add(phone);
-                return RedirectToAction("Details", "People",new { id=phone.PersonId});
+                return RedirectToAction("Details", "People", new { id = phone.PersonId });
             }
             else
             {
@@ -59,9 +59,7 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
         {
             return View();
         }
-        public IActionResult Delete()
-        {
-            return View();
-        }
+
     }
+
 }

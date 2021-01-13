@@ -9,6 +9,7 @@ namespace PhoneBook.Endpoints.WebUI.Models.People
 {
     public class DetailsPersonViewModel : NewPersonModelView
     {
+        //public int PhoneId { get; set; }
         public int personId { get; set; }
         public List<Tag> Tags { get; set; } = new List<Tag>();
         public List<Phone> phone { get; set; }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PhoneBook.Domain.Contracts.Peoples;
+using PhoneBook.Domain.Contracts.Phones;
 using PhoneBook.Domain.Contracts.Tags;
 using PhoneBook.Domain.Core.Peoples;
 using PhoneBook.Endpoints.WebUI.Models;
@@ -18,11 +19,13 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
     {
         private readonly IPersonRepository _personRepository;
         private readonly ITagRepository _tagRepository;
+        private readonly IPhoneRepository _phoneRepository;
 
-        public PeopleController(IPersonRepository personRepository, ITagRepository tagRepository)
+        public PeopleController(IPersonRepository personRepository, ITagRepository tagRepository, IPhoneRepository phoneRepository)
         {
             _personRepository = personRepository;
             _tagRepository = tagRepository;
+            _phoneRepository = phoneRepository;
         }
         public IActionResult Index()
         {
@@ -110,11 +113,11 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             {
                 Person person = new Person
                 {
-                    FristName=updatePerson.FirstName,
-                    LastName=updatePerson.LastName,
-                    Address=updatePerson.Address,
-                    Email=updatePerson.Email,
-                    Id=updatePerson.id
+                    FristName = updatePerson.FirstName,
+                    LastName = updatePerson.LastName,
+                    Address = updatePerson.Address,
+                    Email = updatePerson.Email,
+                    Id = updatePerson.id
                 };
                 _personRepository.Update(person);
                 return RedirectToAction("List");
@@ -146,26 +149,26 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                 _personRepository.Delete(id);
+                _personRepository.Delete(id);
                 return RedirectToAction("List");
 
             }
 
-            return RedirectToAction("Details", new { id = id});
+            return RedirectToAction("Details", new { id = id });
 
         }
-        public IActionResult Details( int id)
+        public IActionResult Details(int id)
         {
             var result = _personRepository.GetPeronWithPhoneNumber(id);
             if (result != null)
             {
                 DetailsPersonViewModel model = new DetailsPersonViewModel()
-                {   
-                   personId=result.Id,
+                {
+                    personId = result.Id,
                     Address = result.Address,
                     FirstName = result.FristName,
                     LastName = result.LastName,
-                    phone=result.Phones,
+                    phone = result.Phones,
                     Email = result.Email
 
                 };
@@ -173,6 +176,13 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             }
             return NotFound();
         }
-
+        public IActionResult DeleteNumber(int id)
+        {
+            var result = _phoneRepository.Get(id);
+            _phoneRepository.Delete(id);
+            return RedirectToAction("Details",new {id=result.Id });
+        }
     }
 }
+
+

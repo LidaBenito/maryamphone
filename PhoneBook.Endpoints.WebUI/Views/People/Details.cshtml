@@ -37,7 +37,7 @@
         <b><label asp-for="Tags"></label> :</b>
         @foreach (var tag in Model.Tags)
         {
-<a href="#" class="badge badge-primary">@tag.Title</a>}
+            <a href="#" class="badge badge-primary">@tag.Title</a>}
 
     </div>
 
@@ -50,7 +50,7 @@
 <h3><label asp-for="phone"></label></h3>
 <div class="row">
 
-    <a class=" col-2 btn btn-outline-primary" asp-controller="Phone" asp-action="Add" asp-route-id="@Model.personId">Add number</a>
+    <a class=" btn-sm btn-outline-primary" asp-controller="Phone" asp-action="Add" asp-route-id="@Model.personId"><i class="fa fa-download"></i></a>
 
     <div class="table-responsive pt-2">
         <table class="table table-striped table-bordered">
@@ -58,16 +58,41 @@
                 <th>Row</th>
                 <th>type</th>
                 <th>Number</th>
+                <th>Delete number</th>
             </tr>
             @{ int i = 0;}
-            @foreach (var p in Model.phone)
+            @foreach (var phone in Model.phone)
             {
 
-<tr>
-    <td>@{++i;}@i</td>
-    <td>@p.PhoneType.ToString()</td>
-    <td>@p.PhoneNumber</td>
-</tr>            }
+                <tr>
+                    <td>@{++i;}@i</td>
+                    <td>@phone.PhoneType.ToString()</td>
+                    <td>@phone.PhoneNumber</td>
+                    <td>
+                        <div>
+                        <a class=" btn-sm btn-outline-danger" data-toggle="modal" data-target="#myModal" ><i class="fa fa-trash"></i></a>
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content pl-2 pt-2">
+                                        <label>Are you Sure?</label>
+                                        <div class="modal-footer">
+                                            <a class="btn btn-success" asp-controller="People" asp-action="DeleteNumber" asp-route-Id="@phone.Id">Yes</a>
+                                            <a class="btn btn-danger" data-dismiss="modal">No</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+
+            
+            }
         </table>
 
     </div>
