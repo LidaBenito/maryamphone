@@ -4,8 +4,10 @@ using PhoneBook.Domain.Contracts.Peoples;
 using PhoneBook.Domain.Contracts.Phones;
 using PhoneBook.Domain.Contracts.Tags;
 using PhoneBook.Domain.Core.Peoples;
+using PhoneBook.Domain.Core.Tags;
 using PhoneBook.Endpoints.WebUI.Models;
 using PhoneBook.Endpoints.WebUI.Models.People;
+using PhoneBook.Endpoints.WebUI.Models.Tags;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -53,10 +55,10 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
                     FristName = Model.FirstName,
                     LastName = Model.LastName,
                     Email = Model.Email,
-                    //PersonTags = new List<PersonTag>(Model.SelectedTag.Select(c => new PersonTag
-                    //{
-                    //    TagId = c
-                    //}).ToList())
+                    PersonTags = new List<PersonTag>(Model.SelectedTag.Select(c => new PersonTag
+                    {
+                        TagId = c
+                    }).ToList())
                 };
                 if (Model?.Image?.Length > 0)
                 {
@@ -85,19 +87,22 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
             modelforDisplay.TagForDisplay = _tagRepository.GetAll().ToList();
             return View(modelforDisplay);
         }
-
         public IActionResult Update([FromRoute] int id)
         {
             var result = _personRepository.Get(id);
             if (result != null)
             {
-                UpdatePersonModelView model = new UpdatePersonModelView
+
+                UpdatePersonModelView model = new UpdatePersonModelView()
                 {
+
+
                     id = result.Id,
                     Email = result.Email,
                     Address = result.Address,
                     LastName = result.LastName,
                     FirstName = result.FristName,
+
 
 
                 };
@@ -179,8 +184,16 @@ namespace PhoneBook.Endpoints.WebUI.Controllers
         public IActionResult DeleteNumber(int id)
         {
             var result = _phoneRepository.Get(id);
-            _phoneRepository.Delete(id);
-            return RedirectToAction("Details",new {id=result.Id });
+            if (result != null)
+            {
+                DetailsPersonViewModel model = new DetailsPersonViewModel()
+                {
+                    personId = result.PersonId
+                };
+                _phoneRepository.Delete(id);
+                return RedirectToAction("Details", new { id = model.personId });
+            }
+            return NotFound();
         }
     }
 }

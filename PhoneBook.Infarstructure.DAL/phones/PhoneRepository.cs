@@ -7,9 +7,9 @@ using System.Text;
 
 namespace PhoneBook.Infarstructure.DAL.phones
 {
-    public class PhoneRepository : BaseRepository<Phone>, IPhoneRepository
+    public class PhoneTagRepository : BaseRepository<Phone>, IPhoneRepository
     {
-        public PhoneRepository(PhoneBookContext dbContext) : base(dbContext)
+        public PhoneTagRepository(PhoneBookContext dbContext) : base(dbContext)
         {
         }
     }

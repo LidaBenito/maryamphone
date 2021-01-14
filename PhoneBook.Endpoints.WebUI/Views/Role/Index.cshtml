@@ -1,13 +1,16 @@
-﻿@model List<Microsoft.AspNetCore.Identity.IdentityRole>
+﻿@model List<PhoneBook.Endpoints.WebUI.Models.AAA.MyIdentityRole>
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
-<table>
+<table class="table table-bordered table-striped">
     <tr>
         <th>
             Role Name
+        </th>
+        <th>
+            Action
         </th>
     </tr>
     @foreach (var item in Model)
@@ -16,7 +19,13 @@
             <td>
                 @item.Name
             </td>
+            <td>
+                <a class=" btn-sm btn-outline-primary" asp-controller="Role" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                <a class=" btn-sm btn-outline-danger" asp-controller="Role" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+
+            </td>
         </tr>
 
     }
+
 </table>

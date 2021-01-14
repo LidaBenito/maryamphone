@@ -1,0 +1,10 @@
+﻿@model PhoneBook.Endpoints.WebUI.Models.AAA.RoleViewModel
+<form asp-action="Create" asp-controller="Role" method="post">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="UserName"></label>
+        <input type="text" asp-for="UserName" class="form-control" maxlength="50" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <input type="submit" class="btn btn-primary" value="save" />
+</form>

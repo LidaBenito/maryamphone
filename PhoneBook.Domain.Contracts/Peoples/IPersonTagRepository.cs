@@ -8,5 +8,6 @@ namespace PhoneBook.Domain.Contracts.Peoples
 {
     public interface IPersonTagRepository:IBaseRepository<PersonTag>
     {
+        PersonTag Update(PersonTag personTag);
     }
 }

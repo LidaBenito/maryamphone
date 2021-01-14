@@ -33,14 +33,14 @@
         <a class=" btn-sm btn-outline-danger" asp-controller="people" asp-action="Delete" asp-route-id="@Model.personId"><i class="fa fa-trash"></i></a>
     </div>
 
-    <div class="col-12">
+    <div class="col-10">
         <b><label asp-for="Tags"></label> :</b>
         @foreach (var tag in Model.Tags)
         {
             <a href="#" class="badge badge-primary">@tag.Title</a>}
 
     </div>
-
+   
 
 </div>
 <br />
